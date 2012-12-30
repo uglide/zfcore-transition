@@ -1,8 +1,7 @@
-# ZFCore Transition #
+![](http://glide.name/docs/zfc-transition/logo.png)
+
 Transition fork of CMF ZFCore [http://code.google.com/p/zfcore/](http://code.google.com/p/zfcore/)
 
-
-----------
 
 ## Основные отличия ##
 
@@ -11,8 +10,6 @@ Transition fork of CMF ZFCore [http://code.google.com/p/zfcore/](http://code.goo
 - Добавлена **поддержка PHPUnit 3.7.10**
 - Модули **blog** и **forum** больше не поддерживаются (удалены)
 
-
-----------
 
 ## Новые модули и возможности ##
 - Добавлен **[Meta Fixtures Manager](https://github.com/uglide/zfcore-transition/wiki/Meta-Fixtures-Manager-%5BMFM%5D)**
@@ -28,11 +25,11 @@ Transition fork of CMF ZFCore [http://code.google.com/p/zfcore/](http://code.goo
 - Обновлен **Core_Grid**
 - Добавлены исправления и улучшения в большую часть системы
 
-----------
+
 ## Установка ##
 `php composer.phar create-project uglide/zfcore-transition путь/установки/ 1.0.0`
 
-----------
+
 
 ## Документация ##
 
