@@ -43,7 +43,7 @@ class Core_ErrorHandler
      * @param string $type
      * @return int
      */
-    public static function saveErrorInLog($error, $type = Buyam_ErrorHandler::ERROR)
+    public static function saveErrorInLog($error, $type = Core_ErrorHandler::ERROR)
     {
         $trace = '';
         $file = '';
