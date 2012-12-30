@@ -1,0 +1,56 @@
+<?php if ($this->grid->getData()): ?>
+    <?php
+    $paginatorTemplate = 'crud/paginator.phtml';
+    if (isset($this->gridOptions['paginatorTemplate'])
+        || !empty($this->gridOptions['paginatorTemplate'])) {
+        $paginatorTemplate = $this->gridOptions['paginatorTemplate'];
+    }
+    ?>
+    <?php if (!isset($this->gridOptions['withoutUpperPagiantion'])
+        || !$this->gridOptions['withoutUpperPagiantion']): ?>
+        <?php echo $this->paginationControl(
+            $this->grid->getPaginator(),
+            'Sliding',
+            $paginatorTemplate,
+            array(
+                'withoutCount' => isset($this->gridOptions['withoutUpperCount']) 
+                    && $this->gridOptions['withoutUpperCount']
+            )
+        ) ?>
+    <?php endif; ?>
+
+    <table cols="<?php echo count($this->grid->getHeaders()) ?>"
+           class="table" cellpadding="0" cellspacing="0">
+        <?php echo $this->partial(
+            'crud/partial/grid-head.phtml',
+            array(
+                'grid' => $this->grid,
+                'useWhiteIcon' => $this->gridOptions['useWhiteIcon']
+            )
+        );?>
+        <?php echo $this->partial(
+            'crud/partial/grid-body.phtml',
+            array(
+                'grid' => $this->grid,
+                'withoutEmptyRows' => $this->gridOptions['withoutEmptyRows']
+            )
+        );?>
+    </table>
+
+    <?php if (!isset($this->gridOptions['withoutDownPagiantion'])
+        || !$this->gridOptions['withoutDownPagiantion']): ?>
+        <?php echo $this->paginationControl(
+            $this->grid->getPaginator(),
+            'Sliding',
+            $paginatorTemplate,
+            array(
+                'withoutCount' => isset($this->gridOptions['withoutBottomCount']) 
+                    && $this->gridOptions['withoutBottomCount']
+            )
+        ) ?>
+    <?php endif; ?>
+<?php else: ?>
+    <div class="alert alert-info">
+        Result is empty
+    </div>
+<?php endif; ?>

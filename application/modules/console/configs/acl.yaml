@@ -1,0 +1,8 @@
+mvc:
+  cron:
+    index:
+        allow: system
+    console:
+        allow: system
+    sitemap:
+        allow: system

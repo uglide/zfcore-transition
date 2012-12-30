@@ -1,0 +1,187 @@
+production:
+  phpSettings:
+    display_startup_errors: off
+    display_errors: off
+    date:
+      timezone: Europe/Kiev
+  includePaths:
+    library: APPLICATION_PATH/../library
+  pluginPaths:
+    Core_Application_Resource: Core/Application/Resource
+  bootstrap:
+    path: APPLICATION_PATH/Bootstrap.php
+    class: Bootstrap
+  appnamespace: Application
+  autoloadernamespaces:
+    - Core
+    - Facebook
+    - Sphinx
+  uploadDir: uploads
+  resources:
+    frontController:
+      moduleDirectory: APPLICATION_PATH/modules
+      moduleControllerDirectoryName: controllers
+      defaultControllerName: index
+      defaultAction: index
+      defaultModule: index
+      baseUrl: /
+      env: APPLICATION_ENV
+      params:
+        prefixDefaultModule: on
+        displayExceptions: off
+      actionhelperpaths:
+        Helper: APPLICATION_PATH/helpers
+      plugins:
+        acl:
+          class: Core_Controller_Plugin_Acl
+          stackindex: 30
+          options:
+            config: acl
+            allowAll: on
+            denied:
+              module: index
+              controller: error
+              action: denied
+            error:
+              module: index
+              controller: error
+              action: notfound
+            login:
+              module: users
+              controller: login
+              action: index
+            role: guest
+            cache: acl
+    router:
+      config: routes
+      cache: router
+    locale: on
+    modules: on
+    layout:
+      layout: default/layout
+      layoutPath: APPLICATION_PATH/layouts/scripts/
+    auth: on
+    registry:
+      fbConfig:
+        appId: 
+        secret: 
+        cookie: on
+      twitterConfig:
+        callbackUrl: /users/login/oauth/type/twitter
+        siteUrl: http://twitter.com/oauth
+        consumerKey: 
+        consumerSecret: 
+      googleConfig:
+        callbackUrl: /users/login/oauth/type/google
+        siteUrl: https://www.google.com/accounts/
+        authorizeUrl: https://www.google.com/accounts/OAuthAuthorizeToken
+        requestTokenUrl: https://www.google.com/accounts/OAuthGetRequestToken
+        accessTokenUrl: https://www.google.com/accounts/OAuthGetAccessToken
+        consumerKey: 
+        consumerSecret: 
+      captcha: on
+      security:
+        csrfProtection: off
+        consumerSecret: 
+    session:
+      save_path: Y:\home\zf-core-transition\application/../data/session
+    mail:
+      transport:
+        type: Zend_Mail_Transport_Smtp
+        host: localhost
+        port: 25
+      defaultFrom:
+        email: zfc@nixsolutions.com
+        name: ZFCore Webmaster
+    asset:
+      adapter: Core_Asset_Adapter_Simple
+      packages:
+        base:
+          include: PUBLIC_PATH/assets/base/
+          buildDir: PUBLIC_PATH/assets/base/builds/
+        default:
+          include: PUBLIC_PATH/assets/default/
+          buildDir: PUBLIC_PATH/assets/default/builds/
+          extend: base
+        dashboard:
+          include: PUBLIC_PATH/assets/dashboard/
+          buildDir: PUBLIC_PATH/assets/dashboard/builds/
+          extend: base
+    view:
+      title: Site based on CMF ZFCore
+      doctype: HTML5
+      charset: UTF-8
+      encoding: UTF-8
+      contentType: text/html; charset=UTF-8
+      meta:
+        httpEquiv:
+          Content-Language: en-US
+      helperPath:
+        Core_View_Helper: Core/View/Helper
+        Application_View_Helper: APPLICATION_PATH/layouts/helpers
+        Comments_View_Helper: APPLICATION_PATH/modules/comments/views/helpers
+      filterPath:
+        Core_View_Filter: Core/View/Filter
+        Application_View_Filter: APPLICATION_PATH/layouts/filters
+      scriptPath:
+        - APPLICATION_PATH/views/scripts
+    navigation:
+      source:
+        dashboard: config
+        default: config
+      config: navigation
+      cache: navigation
+    db:
+      adapter: Pdo Mysql
+      params:
+        host: 127.0.0.1
+        username: zfc-transition
+        password: zfc-transition
+        dbname: zfc
+        charset: utf8
+testing:
+  _extends: production
+  phpSettings:
+    display_startup_errors: on
+    display_errors: on
+  resources:
+    layout:
+      layout: default/layout
+    db:
+      adapter: Pdo Mysql
+      params:
+        host: localhost
+        username: zfc-transition
+        password: zfc-transition
+        dbname: zfc-transition
+        persistent: on
+    frontController:
+      defaultModule: index
+      plugins:
+        acl:
+          options:
+            allowAll: off
+    navigation:
+      source:
+        dashboard: config
+        default: config
+      config: navigation
+      cache: navigation
+development:
+  _extends: production
+  phpSettings:
+    display_startup_errors: on
+    display_errors: on
+    error_reporting: E_ALL
+  resources:
+    frontController:
+      params:
+        displayExceptions: on
+      plugins:
+        debug:
+          class: Core_Controller_Plugin_Debug
+    db:
+      params:
+        profiler:
+          enabled: on
+          class: Zend_Db_Profiler_Firebug

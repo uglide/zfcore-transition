@@ -1,0 +1,11 @@
+roles:
+  - guest:
+  - user:
+    - guest
+  - system:
+  - admin:
+    - user
+resources:
+  balalayka:
+    allow: admin
+    deny: user

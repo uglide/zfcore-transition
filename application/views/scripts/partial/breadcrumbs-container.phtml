@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by Igor Malinovskiy <u.glide@gmail.com>.
+ * breadcrumbs-container.phtml
+ * Date: 25.12.12
+ */
+?>
+<?php
+$nav = $this->navigation($this->menuContainer('Home'));
+
+// Check if there are pages, added in controller action
+if ($this->currentBreadcrumb && $this->currentBreadcrumbParentName) {
+    $container = $nav->getContainer()->findOneByLabel($this->currentBreadcrumbParentName);
+    if ($container) {
+        $container->addPage($this->currentBreadcrumb);
+    }
+}
+
+$breadcrumbs = $nav->breadcrumbs();
+$breadcrumbs->setPartial('/default/partial/breadcrumbs.phtml');
+    //->setSeparator();
+?>
+<?php if ($renderedBreadcrumbs = $breadcrumbs->render()): ?>
+<?=$renderedBreadcrumbs?>
+<?php endif; ?>

@@ -1,0 +1,948 @@
+
+---------------------------
+14-12-2012 18:07:21
+Error in Y:\home\zf-core-transition\public\index.php:69
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Buyam_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 69), error) called at [Y:\home\zf-core-transition\library\Buyam\ErrorHandler.php:24]
+#1  Buyam_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '46777',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508441.313,
+  'REQUEST_TIME' => 1355508441,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:04
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '48976',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508904.65,
+  'REQUEST_TIME' => 1355508904,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:05
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '48977',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508905.543,
+  'REQUEST_TIME' => 1355508905,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:06
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '48985',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508906.344,
+  'REQUEST_TIME' => 1355508906,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:06
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '48990',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508906.912,
+  'REQUEST_TIME' => 1355508906,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:08
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '48991',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508907.999,
+  'REQUEST_TIME' => 1355508907,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:09
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '48999',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508909.004,
+  'REQUEST_TIME' => 1355508909,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:09
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '49004',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508909.781,
+  'REQUEST_TIME' => 1355508909,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:10
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '49011',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508910.036,
+  'REQUEST_TIME' => 1355508910,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:13
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0 FirePHP/0.7.1',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_X_INSIGHT' => 'activate',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '49012',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508913.61,
+  'REQUEST_TIME' => 1355508913,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:14
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0 FirePHP/0.7.1',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_X_INSIGHT' => 'activate',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '49028',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508914.745,
+  'REQUEST_TIME' => 1355508914,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:15:15
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0 FirePHP/0.7.1',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_X_INSIGHT' => 'activate',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '49032',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355508915.257,
+  'REQUEST_TIME' => 1355508915,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 18:37:59
+Error in Y:\home\zf-core-transition\public\index.php:45
+
+Error Message :
+require(): Failed opening required 'autoload.php' (include_path='Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library;Y:\home\zf-core-transition\vendor;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require(): Failed opening required 'autoload.php' (include_path='Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library;Y:\home\zf-core-transition\vendor;Y:\home\zf-core-transition\library;.;Y:\zf;D:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 45), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:24]
+#1  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0 FirePHP/0.7.1',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_X_INSIGHT' => 'activate',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '55453',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355510279.789,
+  'REQUEST_TIME' => 1355510279,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 19:14:13
+Error in Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library\Zend\Config\Yaml.php:175
+
+Error Message :
+file_get_contents(Y:\home\zf-core-transition\application/configs/application.yaml): failed to open stream: No such file or directory
+
+Trace :
+#0 Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library\Zend\Application.php(399): Zend_Config_Yaml->__construct('Y:\home\zf-core...', 'development')
+#1 Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library\Zend\Application.php(85): Zend_Application->_loadConfig('Y:\home\zf-core...')
+#2 Y:\home\zf-core-transition\public\index.php(91): Zend_Application->__construct('development', 'Y:\home\zf-core...')
+#3 {main}
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0 FirePHP/0.7.1',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_X_INSIGHT' => 'activate',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '18110',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355512453.724,
+  'REQUEST_TIME' => 1355512453,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+14-12-2012 19:14:34
+Error in Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library\Zend\Config\Yaml.php:175
+
+Error Message :
+file_get_contents(Y:\home\zf-core-transition\application/configs/application.yaml): failed to open stream: No such file or directory
+
+Trace :
+#0 Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library\Zend\Application.php(399): Zend_Config_Yaml->__construct('Y:\home\zf-core...', 'development')
+#1 Y:\home\zf-core-transition\vendor\zendframework\zendframework1\library\Zend\Application.php(85): Zend_Application->_loadConfig('Y:\home\zf-core...')
+#2 Y:\home\zf-core-transition\public\index.php(91): Zend_Application->__construct('development', 'Y:\home\zf-core...')
+#3 {main}
+
+SERVER :
+array (
+  'APPLICATION_ENV' => 'development',
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0 FirePHP/0.7.1',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_X_INSIGHT' => 'activate',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;D:\\\\PHP\\\\pear\\PHPUnit\\Extensions;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.4.7',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '18477',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1355512474.236,
+  'REQUEST_TIME' => 1355512474,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+)
+SESSION :
+Session not started!
+---------------------------
+---------------------------
+30-12-2012 16:38:03
+Error in Y:\home\zf-core-transition\public\index.php:54
+
+Error Message :
+require() [<a href='function.require'>function.require</a>]: Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;C:\php\pear')
+
+Trace :
+#0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require() [<a href='function.require'>function.require</a>]: Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;C:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 54), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:18]
+#1  Core_ErrorHandler::handler(2, date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Helsinki' for '2.0/no DST' instead, Y:\home\zf-core-transition\library\Core\ErrorHandler.php, 73, Array ([error] => Array ([type] => 64,[message] => require() [<a href='function.require'>function.require</a>]: Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;C:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 54),[type] => error,[trace] => #0  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require() [<a href='function.require'>function.require</a>]: Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;C:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 54), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:18]
+#1  Core_ErrorHandler::handler()
+,[file] => Y:\home\zf-core-transition\public\index.php:54,[message] => require() [<a href='function.require'>function.require</a>]: Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;C:\php\pear')))
+#2  date(d-m-Y H:i:s) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:73]
+#3  Core_ErrorHandler::saveErrorInLog(Array ([type] => 64,[message] => require() [<a href='function.require'>function.require</a>]: Failed opening required 'autoload.php' (include_path=';;Y:\home\zf-core-transition\library;.;C:\php\pear'),[file] => Y:\home\zf-core-transition\public\index.php,[line] => 54), error) called at [Y:\home\zf-core-transition\library\Core\ErrorHandler.php:18]
+#4  Core_ErrorHandler::handler()
+
+
+SERVER :
+array (
+  'HTTP_HOST' => 'zf-core-transition',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_COOKIE' => 'PHPSESSID=a07b1344c4538c4729b6299ef8a34b0a',
+  'PATH' => '\\usr\\local\\ImageMagick;D:\\\\PHP\\;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseHg\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin;C:\\Program Files\\MATLAB\\R2008b\\bin\\win64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft Windows Performance Toolkit\\;D:\\PHP;C:\\Users\\BlackBox\\AppData\\Roaming\\npm\\;C:\\Program Files (x86)\\svn;C:\\Program Files (x86)\\Git\\bin',
+  'SystemRoot' => 'C:\\Windows',
+  'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+  'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+  'WINDIR' => 'C:\\Windows',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.3.20 Server at zf-core-transition Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8k PHP/5.3.20',
+  'SERVER_NAME' => 'zf-core-transition',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => 'Y:/home/zf-core-transition/public',
+  'SERVER_ADMIN' => 'admin@localhost',
+  'SCRIPT_FILENAME' => 'Y:/home/zf-core-transition/public/index.php',
+  'REMOTE_PORT' => '43025',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME' => 1356878283,
+  'argv' => 
+  array (
+  ),
+  'argc' => 0,
+)
+POST :
+array (
+)
+GET :
+array (
+)
+COOKIE :
+array (
+  'PHPSESSID' => 'a07b1344c4538c4729b6299ef8a34b0a',
+)
+SESSION :
+Session not started!
+---------------------------

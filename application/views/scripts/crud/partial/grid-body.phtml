@@ -1,0 +1,28 @@
+<tbody>
+    <?php foreach ($this->grid->getData() as $row): ?>
+    <tr class="grid-item-row" <?php echo $row->getAttrString() ?>>
+
+        <?php
+        /**
+        * @var $cell Core_Grid_Cell
+        */
+        foreach ($row as $cell):
+        ?>
+
+        <td><?php echo $cell->render() ?></td>
+        <?php endforeach; ?>
+    </tr>
+    <?php endforeach; ?>
+    <?php if (!isset($this->withoutEmptyRows) || !$this->withoutEmptyRows): ?>
+    <?php
+        $initialValue = $this->grid->getItemCountPerPage() - count($this->grid->getData());
+        for ($i = $initialValue; $i > 0; $i--):
+    ?>
+    <tr>
+        <?php for ($j = count($this->grid->getHeaders()); $j > 0; $j--): ?>
+        <td>&nbsp;</td>
+        <?php endfor; ?>
+    </tr>
+    <?php endfor; ?>
+    <?php endif; ?>
+</tbody>

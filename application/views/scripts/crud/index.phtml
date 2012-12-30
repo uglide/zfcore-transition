@@ -1,0 +1,14 @@
+<?php
+$this->headScript()->appendFile($this->baseUrl('/js/grid.js'));
+$this->headScript()->appendFile($this->baseUrl('/js/crud/index.js'));
+$this->headScript()->appendFile($this->baseUrl('/js/crud/autocomplete.js'));
+?>
+<div class="grid-controls form-inline">
+    <?php echo $this->placeholder('grid_buttons') ?>
+    <?php if (sizeof($this->filters)): ?>
+    <?= $this->filterForm?>
+    <?php endif; ?>
+</div>
+<div id="grid"
+     class="clear"
+     data-url="<?= $this->url(array('action' => 'grid'), 'default') ?>"></div>

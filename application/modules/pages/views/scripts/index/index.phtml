@@ -1,0 +1,12 @@
+<?php
+
+$this->headTitle($this->page->title, Zend_View_Helper_Placeholder_Container_Abstract::PREPEND)->setSeparator(' » ');
+$this->headMeta()->appendName('keywords', empty($this->page->keywords) ? $this->page->title : $this->page->keywords);
+$this->headMeta()->appendName('description', empty($this->page->description) ? $this->page->title : $this->page->description);
+
+?>
+<h1><?php echo $this->page->title; ?></h1>
+<hr/>
+<article>
+<?php echo $this->page->content; ?>
+</article>

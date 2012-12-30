@@ -1,0 +1,13 @@
+<h1><?php $this->_e('Sitemap') ?></h1>
+<hr/>
+<article>
+    <ul>
+    <?php
+        echo $this->navigation($this->menuContainer('Home'))
+            ->menu()
+            ->setPartial('/default/partial/sitemap.phtml')
+            ->setMaxDepth(50)
+            ->setMinDepth(0);
+    ?>
+    </ul>
+</article>

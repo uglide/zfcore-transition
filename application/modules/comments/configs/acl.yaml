@@ -1,0 +1,7 @@
+mvc:
+  comments:
+    add:
+      allow: guest
+    aliases:
+    management:
+      allow: admin

@@ -1,0 +1,82 @@
+<form action="" method="post">
+
+<h2><?php echo $this->__('Mandatory requirements')?>:</h2>
+
+<article>
+    <h3><?php echo $this->__('PHP version')?>:</h3>
+    <hr/>
+    <ul>
+        <li class="alert alert-<?php echo $this->isValidPhpVersion? 'success' : 'error'; ?>">
+            Checking that PHP version is at least <?php echo $this->minPhpVersion; ?>(<?php echo $this->phpversion;?> installed)
+        </li>
+    </ul>
+</article>
+
+<article>
+    <h3><?php echo $this->__('Directories')?>:</h3>
+    <hr/>
+    <ul>
+        <?php
+         foreach ($this->directories as $directory => $info):?>
+            <?php
+            if (!$info['exists']) {
+                echo '<li class="alert alert-error">Checking path `' 
+                    . $directory .'`. It\'s not exists, run <code>'
+                    . 'mkdir ' . $info['path'] . ' | chmod 777 ' 
+                    . $info['path'] . '</code></li>';
+            } elseif (!$info['writable']) {
+                echo '<li class="alert alert-error">Checking path `' 
+                    . $directory .'`. It\'s not writable, run <code>'
+                    . 'chmod 777 ' . $info['path'] . '</code></li>';
+            } else {
+                echo '<li class="alert alert-success">Checking path `' 
+                    . $directory .'`. It exists and is writable.</li>';
+            }
+            ?>
+        <?php endforeach;?>
+    </ul>
+</article>
+
+<h2><?php echo $this->__('Optional checks')?>:</h2>
+
+<article>
+    <h3><?php echo $this->__('PHP configs')?>:</h3>
+    <hr/>
+    <ul>
+    <?php
+     foreach ($this->phpOptions as $opt => $value): ?>
+        <li class="alert <?php echo $value['check'] ? 'alert-success' : ''; ?>">
+            <?php echo $value['title']; ?>
+        </li>
+    <?php endforeach;?>
+    </ul>
+</article>
+
+<article>
+    <h3><?php echo $this->__('PHP extensions')?>:</h3>
+    <hr/>
+    <ul>
+    <?php foreach ($this->phpExtensions as $ext => $desc): ?>
+        <li class="alert <?php echo $desc['check'] ? 'alert-success' : ''; ?>">
+            <?php echo $desc['title'];?>
+            <blockquote><?php echo $desc['description'];?></blockquote>
+        </li>
+    <?php endforeach;?>
+    </ul>
+</article>
+
+    <input type="submit" name="submit" <?php echo $this->isValid ? '' : 'disabled';?> id="submit" class="btn btn-primary pull-right" value="Next &raquo;">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+

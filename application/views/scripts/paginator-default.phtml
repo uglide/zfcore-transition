@@ -1,0 +1,92 @@
+<?php
+/**
+ * paginator.phtml
+ * Created by Igor Malinovskiy <u.glide@gmail.com>.
+ * Date: 09.07.12
+ */
+?>
+
+<?php
+
+if ($this->pageCount
+):
+    /*
+     * Set router for url helper
+     */
+    $router = (isset($this->router)) ? $this->router : 'default';
+
+    $reset = false;
+
+    /*
+     * define function, which set url parameters
+     */
+    $prms = function ($page)
+    {
+        return array('page' => $page);
+    };
+
+    /*
+     * If isset @useParametersMarge redefine $prms function
+     */
+    if (isset($this->useParametersMerge)) {
+        $prms = function ($page)
+        {
+            $parameters = Zend_Controller_Front::getInstance()->getRequest()->getParams();
+            return array_merge($parameters, array('page' => $page));
+        };
+    }
+
+    /*
+    * If isset @skipFirstPage redefine $prms function
+    */
+    if (isset($this->skipFirstPage)) {
+        $prms = function ($page)
+        {
+            $parameters = Zend_Controller_Front::getInstance()->getRequest()->getParams();
+
+            if ($page != 1) {
+                return array_merge($parameters, array('page' => $page));
+            } else {
+                unset($parameters['page']);
+                return $parameters;
+            }
+        };
+        $reset = true;
+    }
+
+    $totalSuffix = (isset($this->totalSufix)) ? $this->totalSufix : '';
+
+    ?>
+<div class="pagination-container">
+    <ul class="pagination" id="pagination">
+        <?php if ($this->pageCount > 1): ?>
+        <li class="aisle">Aisle</li>
+        <?php endif; ?>
+        <li class="<?php if (!isset($this->previous)): ?> disabled <?php else : ?> enabled <?php endif;
+            ?>arrow-paging">
+            <?php if (isset($this->previous)): ?>
+            <a class="nav-page" href="<?=$this->url($prms($this->previous), $router, $reset);?>">&#171;</a>
+            <?php else: ?>
+            <span class="nav-page">&#171;</span>
+            <?php endif; ?>
+        </li>
+        <?php foreach ($this->pagesInRange as $page): ?>
+        <li<?php if ($page == $this->current): ?> class="current" <?php endif;?>>
+            <?php if ($page != $this->current): ?>
+            <a class="nav-page" href="<?=$this->url($prms($page), $router, $reset);?>"><?=$page?></a>
+            <?php else: ?>
+            <span class="nav-page"><?php echo $page; ?></span>
+            <?php endif; ?>
+        </li>
+        <?php endforeach; ?>
+        <li class="<?php if (!isset($this->next)): ?> disabled <?php else : ?> enabled <?php endif; ?>arrow-paging">
+            <?php if (isset($this->next)): ?>
+            <a class="nav-page" href="<?=$this->url($prms($this->next), $router, $reset);?>">&#187;</a>
+            <?php else: ?>
+            <span class="nav-page">&#187;</span>
+            <?php endif; ?>
+        </li>
+        <li class="totalItems"><span>Total: <?=$this->totalItemCount . $totalSuffix?></span></li>
+    </ul>
+</div>
+<?php endif; ?>

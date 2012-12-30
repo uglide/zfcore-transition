@@ -1,0 +1,47 @@
+<thead>
+    <tr>
+        <?php
+        /**
+         * @var $header Core_Grid_Column
+         */
+        foreach ($this->grid->getHeaders() as $id => $header):
+
+            $attrs = $header->getAttribs();
+            $arrowClass = '';
+            $whiteIconClass = '';
+
+            if (isset($attrs['class'])) {
+                $attrs['class'] .= ' header';
+            } else {
+                $attrs['class'] = 'header';
+            }
+            $attrs['class'] .= ' nowrap';
+
+            if ($header->isOrdered()) {
+                $arrowClass = $header->getOrder() == 'ASC' ? 'down' : 'up';
+
+                $attrs['class'] .= ' ' . $arrowClass;
+            }
+
+            if ($header->isSortable()) {
+                $attrs['class'] .= ' orderable';
+                $attrs['data-column'] = $id;
+                $attrs['data-direction'] = $header->getOrder();
+            }
+            $attributes = array();
+            foreach ($attrs as $attr => $value) {
+                $attributes[] = $attr . '="' . $value . '"';
+            }
+            if (isset($this->useWhiteIcon) && $this->useWhiteIcon) {
+                $whiteIconClass = 'icon-white';
+            }
+        ?>
+        <th <?php echo implode($attributes, ' ') ?>>
+            <?php if ($arrowClass): ?>
+            <i class="icon-arrow-<?php echo $arrowClass, ' ', $whiteIconClass; ?>"></i>
+            <?php endif; ?>
+            <?php echo $header->getName(); ?>
+        </th>
+        <?php endforeach; ?>
+    </tr>
+</thead>

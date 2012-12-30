@@ -1,0 +1,48 @@
+$this->query('DROP TABLE IF EXISTS `test_one`');
+
+$this->query('CREATE TABLE `test2` (
+          `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+          `login` varchar(255) NOT NULL,
+          `email` varchar(255) NOT NULL,
+          `password` varchar(64) NOT NULL,
+          `salt` varchar(32) NOT NULL,
+
+CREATE TRIGGER `tr_123ore_insert` BEFORE INSERT ON `test3`
+
+$this->query("CREATE TRIGGER
+`tr123` AFTER INSERT ON `test4`
+
+$this->query("insert  into `test5`(`id`,`status_text`) values (1,'not processed'),(2,'invoice was printed'),(3,'paid');
+
+
+DELETE FROM `test11`
+
+$this->query("TRUNCATE TABLE `test6`;");
+
+        $this->query('CREATE TABLE `test6` (
+              `cityId` INT(10) NOT NULL,
+              `shipmentMethodId` INT(11) NOT NULL,
+              `active` INT(1) DEFAULT \'1\',
+              PRIMARY KEY (`cityId`, `shipmentMethodId`),
+              CONSTRAINT `shipment_capability_city_id` FOREIGN KEY (`cityId`) REFERENCES `test7` (`id`),
+              CONSTRAINT `shipment_capability_shipment_method_id` FOREIGN KEY (`shipmentMethodId`) REFERENCES `test8` (`id`)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8;');
+
+UPdate `test6`
+        $this->query("
+            ALTER TABLE `test9`
+            CHANGE COLUMN `role` `role` ENUM(
+                'guest',
+                'buyer',
+                'super-admin',
+                'delivery-admin',
+                'cs-agent',
+                'shop-owner',
+                'book-keeper',
+                'complain-manager',
+                'developer',
+                'ms-admin'
+            ) NOT NULL DEFAULT 'guest' AFTER `avatar`;
+        ");
+ $this->query('ALTER TABLE `test10`
+            ADD COLUMN `comments_modified_date`

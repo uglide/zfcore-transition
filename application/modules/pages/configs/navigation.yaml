@@ -1,0 +1,62 @@
+dashboard:
+  staticpages:
+    label: Pages
+    uri:
+    class: file
+    order: 1
+    pages:
+      create:
+        label: Add New Page
+        module: pages
+        controller: management
+        action: create
+        route: default
+      edit:
+        label: All Pages
+        module: pages
+        controller: management
+        action: index
+        route: default
+default:
+#  terms:
+#    label: Terms of use
+#    route: pages
+#    module: pages
+#    controller: index
+#    action: index
+#    params:
+#      alias: terms
+#    pages:
+#      conditions:
+#        label: Terms and conditions
+#        route: pages
+#        module: pages
+#        controller: index
+#        action: index
+#        params:
+#          alias: conditions
+#      privacy:
+#        label: Privacy policy
+#        route: pages
+#        module: pages
+#        controller: index
+#        action: index
+#        params:
+#          alias: privacy
+  about:
+    label: About
+    route: pages
+    module: pages
+    controller: index
+    action: index
+    params:
+      alias: about
+    order: 1
+  sitemap:
+    label: Sitemap
+    route: sitemap
+    module: pages
+    controller: index
+    action: sitemap
+    title: sitemap
+    order: 95

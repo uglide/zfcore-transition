@@ -1,0 +1,19 @@
+dashboard:
+  catalog:
+    label: Categories
+    uri:
+    class: folder-open
+    order: 96
+    pages:
+      create:
+        label: Add New
+        module: categories
+        controller: management
+        action: create
+        route: default
+      edit:
+        label: All Categories
+        module: categories
+        controller: management
+        action: index
+        route: default

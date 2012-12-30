@@ -1,0 +1,21 @@
+<?php
+$className = '';
+$messages = array();
+if ($messages = $this->FlashMessenger()->setNamespace('info')->getMessages()) {
+    $className = 'alert-info';
+} elseif ($messages = $this->FlashMessenger()->setNamespace('error')->getMessages()) {
+    $className = 'alert-error';
+} elseif ($messages = $this->FlashMessenger()->setNamespace('success')->getMessages()) {
+    $className = 'alert-success';
+} else {
+    $messages = $this->FlashMessenger()->getMessages();
+}
+?>
+<?php if ($messages): ?>
+<?php foreach ($messages as $message) : ?>
+    <div class="alert <?=$className?>">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <?=$message?>
+    </div>
+    <?php endforeach; ?>
+<?php endif; ?>
