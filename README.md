@@ -8,6 +8,7 @@ Transition fork of CMF ZFCore [http://code.google.com/p/zfcore/](http://code.goo
 - PHP 5.2 больше **не** поддерживается. Минимальная версия php для работы CMF - **5.3.5**
 - **Быстрая установка** вместе с зависимостями через **Composer**
 - Добавлена **поддержка PHPUnit 3.7.10**
+- Улучшена производительность (модуль APC теперь обязательный + используется classmap autoloader)
 - Модули **blog** и **forum** больше не поддерживаются (удалены)
 
 
@@ -27,7 +28,8 @@ Transition fork of CMF ZFCore [http://code.google.com/p/zfcore/](http://code.goo
 
 
 ## Установка ##
-`php composer.phar create-project uglide/zfcore-transition путь/установки/ 1.0.0`
+
+`php composer.phar create-project uglide/zfcore-transition путь/установки/ 1.0.1`
 
 
 
