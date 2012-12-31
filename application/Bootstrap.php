@@ -41,6 +41,39 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         }
     }
 
+    /**
+     * Set up default app cache
+     * NOTE: We must clean cache after update application to new version
+     */
+    protected function _initDefaultAppCache()
+    {
+        //we don't need cache in development process
+        if ($this->_isCurrEnvNeedCache()) {
+            $frontendOptions = array(
+                "lifetime" => 60 * 60 * 24 * 30,
+                "automatic_serialization" => true,
+                "automatic_cleaning_factor" => 1,
+                "ignore_user_abort" => true
+            );
+
+            $backendOptions = array(
+                "file_name_prefix" => APPLICATION_ENV . "_appcache",
+                "cache_dir" => APPLICATION_PATH . "/../data/cache",
+                "cache_file_umask" => 0644
+            );
+
+            // getting a Zend_Cache_Core object
+            $cache = Zend_Cache::factory(
+                'Core',
+                'File',
+                $frontendOptions,
+                $backendOptions
+            );
+
+            Zend_Registry::getInstance()->set('cache', $cache);
+        }
+    }
+
     private function _isCurrEnvNeedCache()
     {
         return (APPLICATION_ENV != 'development');
