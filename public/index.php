@@ -8,11 +8,15 @@ $appRootPath = realpath(__DIR__ . '/../');
 
 //boosted index
 $constants = array(
-    'ERROR_REPORT_MAIL' => 'admin@localhost.com', // Define error reporting info
-    'ERROR_REPORT_SUBJECT' => 'ZFCore: Error occurred in application', // Define path to application directory
+    // Define error reporting info
+    'ERROR_REPORT_MAIL' => 'admin@localhost.com',
+    // Define path to application directory
+    'ERROR_REPORT_SUBJECT' => 'ZFCore: Error occurred in application',
     'APPLICATION_ROOT_PATH' => $appRootPath,
-    'APPLICATION_PATH' => $appRootPath . '/application', // Define path to application directory
-    'APPLICATION_ENV' => (($env = getenv('APPLICATION_ENV')) ? $env : 'production'),  // Define application environment
+    // Define path to application directory
+    'APPLICATION_PATH' => $appRootPath . '/application',
+    // Define application environment
+    'APPLICATION_ENV' => (($env = getenv('APPLICATION_ENV')) ? $env : 'production'),
     'PUBLIC_PATH' => __DIR__, // Define path to public directory
     'DS' => DIRECTORY_SEPARATOR, // Define short alias for DIRECTORY_SEPARATOR
     'START_TIMER' => microtime(true)
@@ -39,9 +43,6 @@ register_shutdown_function(array('Core_ErrorHandler', 'handler'));
 set_error_handler(array('Core_ErrorHandler', 'handler'));
 
 require 'autoload.php';
-
-/** Zend_Application */
-require_once 'Zend/Application.php';
 
 try {
     $config = APPLICATION_PATH . '/configs/application.yaml';
@@ -79,6 +80,24 @@ try {
             throw new Exception('Config not founded!');
         }
     }
+
+    require_once 'Zend/Loader/AutoloaderFactory.php';
+    require_once 'Zend/Loader/ClassMapAutoloader.php';
+
+    Zend_Loader_AutoloaderFactory::factory(
+        array(
+            'Zend_Loader_ClassMapAutoloader' => array(
+                $appRootPath . '/vendor/uglide/zendframework1/library/autoload_classmap.php',
+                $appRootPath . '/library/autoload_classmap.php'
+            ),
+            'Zend_Loader_StandardAutoloader' => array(
+                'autoloadernamespaces' => $config['autoloadernamespaces'],
+                'fallback_autoloader' => true
+            )
+        )
+    );
+
+    require_once 'Zend/Application.php';
 
     // Create application, bootstrap, and run
     $application = new Zend_Application(
