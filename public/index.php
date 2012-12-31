@@ -4,43 +4,30 @@
  * @package  Bootstrap
  */
 
-// Define error reporting info
-defined('ERROR_REPORT_MAIL')
-    || define('ERROR_REPORT_MAIL', 'admin@localhost.com');
+$appRootPath = realpath(__DIR__ . '/../');
 
-// Define path to application directory
-defined('ERROR_REPORT_SUBJECT')
-    || define('ERROR_REPORT_SUBJECT', 'ZFCore: Error occurred in application');
+//boosted index
+$constants = array(
+    'ERROR_REPORT_MAIL' => 'admin@localhost.com', // Define error reporting info
+    'ERROR_REPORT_SUBJECT' => 'ZFCore: Error occurred in application', // Define path to application directory
+    'APPLICATION_ROOT_PATH' => $appRootPath,
+    'APPLICATION_PATH' => $appRootPath . '/application', // Define path to application directory
+    'APPLICATION_ENV' => (($env = getenv('APPLICATION_ENV')) ? $env : 'production'),  // Define application environment
+    'PUBLIC_PATH' => __DIR__, // Define path to public directory
+    'DS' => DIRECTORY_SEPARATOR, // Define short alias for DIRECTORY_SEPARATOR
+    'START_TIMER' => microtime(true)
+);
 
-
-// Define path to application directory
-defined('APPLICATION_PATH')
-    || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
-
-// Define application environment
-defined('APPLICATION_ENV')
-    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
-
-// Define path to public directory
-defined('PUBLIC_PATH')
-    || define('PUBLIC_PATH', dirname(__FILE__));
-
-// Define short alias for DIRECTORY_SEPARATOR
-defined('DS')
-    || define('DS', DIRECTORY_SEPARATOR);
-
-// Define short alias for DIRECTORY_SEPARATOR
-defined('START_TIMER')
-    || define('START_TIMER', microtime(true));
+apc_define_constants('ZFCoreTransitionConstants', $constants);
 
 // Ensure library/ is on include_path
 set_include_path(
     implode(
         PATH_SEPARATOR,
         array(
-            realpath(APPLICATION_PATH . '/../vendor/uglide/zendframework1/library'),
-            realpath(APPLICATION_PATH . '/../vendor'),
-            realpath(APPLICATION_PATH . '/../library'),
+            $appRootPath . '/vendor/uglide/zendframework1/library',
+            $appRootPath . '/vendor',
+            $appRootPath . '/library',
             get_include_path()
         )
     )
