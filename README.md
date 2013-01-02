@@ -28,6 +28,7 @@ Transition fork of CMF ZFCore [http://code.google.com/p/zfcore/](http://code.goo
 
 
 ## Установка ##
+**Установка в Windows**: Для корректной установки необходим [Cygwin](http://cygwin.com/setup.exe) или [Win-bash](http://sourceforge.net/projects/win-bash/files/shell-complete/latest/) или **[Git](http://git-scm.com/download/win)** (**Рекомендуемый вариант** - в состав входит спортированный bash).
 
 `php composer.phar create-project uglide/zfcore-transition путь/установки/ 1.0.1`
 
