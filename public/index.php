@@ -28,21 +28,19 @@ apc_define_constants('ZFCoreTransitionConstants', $constants);
 set_include_path(
     implode(
         PATH_SEPARATOR,
-        array(
-            $appRootPath . '/vendor/uglide/zendframework1/library',
-            $appRootPath . '/vendor',
-            $appRootPath . '/library',
-            get_include_path()
-        )
+        array($appRootPath . '/library', get_include_path())
     )
 );
 
-require_once 'Core/ErrorHandler.php';
+require $appRootPath . '/vendor/autoload.php';
 
+/**
+ * Register error handler
+ */
+require_once 'Core/ErrorHandler.php';
 register_shutdown_function(array('Core_ErrorHandler', 'handler'));
 set_error_handler(array('Core_ErrorHandler', 'handler'));
 
-require 'autoload.php';
 
 try {
     $config = APPLICATION_PATH . '/configs/application.yaml';
@@ -56,7 +54,7 @@ try {
                                      "ignore_user_abort" => true);
 
             $backendOptions  = array("file_name_prefix" => APPLICATION_ENV . "_config",
-                                     "cache_dir" =>  APPLICATION_PATH ."/../data/cache",
+                                     "cache_dir" =>  $appRootPath ."/data/cache",
                                      "cache_file_umask" => 0644);
 
             // getting a Zend_Cache_Core object
@@ -80,6 +78,13 @@ try {
             throw new Exception('Config not founded!');
         }
     }
+
+    $classFileIncCache = $appRootPath . '/data/cache/pluginLoaderCache.php';
+
+    if (file_exists($classFileIncCache)) {
+        include_once $classFileIncCache;
+    }
+    Zend_Loader_PluginLoader::setIncludeFileCache($classFileIncCache);
 
     require_once 'Zend/Loader/AutoloaderFactory.php';
     require_once 'Zend/Loader/ClassMapAutoloader.php';

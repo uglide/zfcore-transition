@@ -25,7 +25,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
             $backendOptions = array(
                 "file_name_prefix" => APPLICATION_ENV . "_db_table_metadata",
-                "cache_dir" => APPLICATION_PATH . "/../data/cache",
+                "cache_dir" => APPLICATION_ROOT_PATH . "/data/cache",
                 "cache_file_umask" => 0644
             );
 
@@ -58,7 +58,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
             $backendOptions = array(
                 "file_name_prefix" => APPLICATION_ENV . "_appcache",
-                "cache_dir" => APPLICATION_PATH . "/../data/cache",
+                "cache_dir" => APPLICATION_ROOT_PATH . "/data/cache",
                 "cache_file_umask" => 0644
             );
 
